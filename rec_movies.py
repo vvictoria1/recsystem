@@ -32,7 +32,7 @@ rating = rating[rating.rating == 5.0]
 merged = pd.merge(movies, rating, on='movieId', how='outer')
 merged.pop('movieId')
 merged.pop('genres')
-merged_sub = merged[merged.userId <= 1000]
+merged_sub = merged[merged.userId <= 1000] #в качестве примера взято 1000 пользователей (для более быстрого расчета)
 sg.one_line_progress_meter('Загрузка', 1, 4, '-key-')
 max_id = max(merged['userId'])
 value.split(', ')
