@@ -23,7 +23,7 @@ def recommendations(user):
 
 
 text = 'Введите любимые фильмы через запятую. Пример ввода: The Shawshank Redemption (1994), The Godfather (1969), ' \
-       'The Dark Kinght (2008) '
+       'The Dark Knight (2008) '
 value = enterbox(text)
 sg.one_line_progress_meter('Загрузка', 0, 4, '-key-')
 movies = pd.read_csv("movies.csv")
